@@ -1,0 +1,33 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    int A, B, C, D;
+
+    Chin:
+    cout << "What is your desired number? "; cin >> A;
+    
+    for(C = 1; C <= A; ++C)
+    {
+        D += C;
+    }
+    
+        if(A <= 0)
+        {
+            cout << "\nThank You!";
+        }
+
+        else
+        {
+            cout << "\nThe sum of all real numbers from 1 to " << A << " is " << D << "\n \n";
+	        D = 0;
+            goto Chin;
+        }   
+        
+
+    _getch();
+    return 0;
+}
