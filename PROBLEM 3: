@@ -1,0 +1,74 @@
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int X, Y;
+    float V, Z;
+    Z = 2.5;
+    
+    cout << "What is the value of x? "; cin >> X;
+    cout << "What is the value of y? "; cin >> Y;
+    switch(X)
+    {
+        case 1:
+            {		
+                if (X == 1 && 1 < Y && Y < 5)
+                    {
+                        V = (X * Y * Z);
+                            cout << "The value of V is " << setprecision(2) << V;
+                            break;
+                    }
+                    
+                else if (X == 1 && Y >= 5)
+                    {
+                        V = (X + (Y / Z));
+                            cout << "The value of V is " << setprecision(2) << V;
+                            break;
+                    }
+                    
+                else
+                    {
+                        V = (X + Y + Z);
+                            cout << "The value of V is " << setprecision(2) << V;
+                            break;
+                    }        
+            }
+            
+        case 2:
+            {
+                if (X == 2 && Y <= 5)
+                    {
+                        V = abs ((X - Y) / Z);
+                            cout << "The value of V is " << setprecision(2) << V;
+                            break;
+                    }
+                    
+                else if (X == 2 && Y > 5)
+                    {
+                        V = (X - sqrt(Y + Z));
+                            cout << "The value of V is " << setprecision(2) << V;
+                            break;
+                    }
+                    
+                else
+                    {
+                        V = (X + Y + Z);
+                            cout << "The value of V is " << setprecision(2) << V;
+                            break;
+                    }        
+            }
+        
+        default: 
+            V = (X + Y + Z);
+                cout << "The value of V is " << setprecision(2) << V;
+                break;
+    }
+    
+    _getch();
+    return 0;
+}
