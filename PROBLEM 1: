@@ -1,0 +1,52 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int H, A, B, AH, BH, C;
+	char P;
+	cout << "What type of package did you purchase? "; cin >> P;
+	cout << "How many hours were used? "; cin >> H;
+	A = 995;
+	B = 1495;
+	C = 1995;
+	AH = (A + ((H - 10)*20));
+	BH = (B + ((H - 20)*10));
+	switch (P)
+	{
+		case 'A':
+		{
+			if (H<=10)
+				cout << "The total amount due is " << A;
+			else
+				cout << "The total amount due is " << AH;
+			break;
+		}
+		
+		case 'B':
+		{
+			if (H<=20)
+				cout << "The total amount due is " << B;
+			else
+				cout << "The total amount due is " << BH;
+			break;
+		}
+		
+		case 'C':
+		{
+			cout << "The total amount due is " << C;
+			break;
+		}
+		
+		default:
+		{
+		    cout << "Error! Case not found.";
+		    break;
+		}
+	}
+
+    _getch();
+	return 0;
+}
