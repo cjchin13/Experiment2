@@ -1,0 +1,35 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    int A;
+    float B, C, D, E, F, G, H;
+    
+    A = 35;
+    B = 1.10;
+
+    cout << "What was your water meter reading last month? "; cin >> C;
+    cout << "What was your water meter reading this month? "; cin >> G;
+    cout << "How much have you paid for the last month? "; cin >> D;
+    
+    H = (G - C);
+    E = (A + (B * H));
+    F = (E + 20);	
+
+        if (D<E)
+        {
+            cout << "The water bill is " << F << " which include the late fee of 20" << endl;
+        }
+        
+        else
+        {
+            cout << "The water bill is " << E << endl;
+        }
+        
+    _getch();
+    return 0;
+}
+
