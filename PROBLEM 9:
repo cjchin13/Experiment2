@@ -1,0 +1,25 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    int A, B, C, D;
+    
+    cout << "What is your desired length? "; cin >> A;
+    cout << "What is your desired width? "; cin >> B;
+    
+    for(C=1; C<=A; C++)
+        {
+
+            for (D=1; D<=B; D++)
+                {
+                    cout << "*";
+                }
+            cout << endl;
+        }    
+    
+    _getch();
+    return 0;
+}
