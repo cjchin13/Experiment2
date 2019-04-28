@@ -1,0 +1,28 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    int A, B, C, D;
+    B = 0;
+    C = 1;
+    
+    cout << "First 20 Fibonacci numbers after 0 and 1: \n";
+    cout << "0, 1";
+    
+    for(D = 0; D <= 19; D++)
+    {            
+
+        A = B + C;
+        B = C;
+        C = A;
+            
+        cout << ", " << A;
+
+    }
+
+    _getch();
+    return 0;
+}
